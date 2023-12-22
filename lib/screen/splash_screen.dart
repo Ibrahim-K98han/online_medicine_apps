@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:online_medicine_apps/widget/button_primary.dart';
 import 'package:online_medicine_apps/widget/general_logo_space.dart';
 
+import '../theme.dart';
 import '../widget/widget_ilustration.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class SplashScreen extends StatelessWidget {
       body: GeneralLogoSpace(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 45,
             ),
             WidgetIlustration(
@@ -21,9 +22,25 @@ class SplashScreen extends StatelessWidget {
               title: 'Find Your Medical',
               subtitle1: 'Consult with a Doctor',
               subtitle2: 'Whereever and whenever you want',
-              child: ButtonPrimary(
-                text: 'get started',
-                onTap: () {},
+            ),
+            // ButtonPrimary(
+            //   text: 'get started',
+            //   onTap: () {},
+            // )
+            SizedBox(
+              width: MediaQuery.of(context).size.width - 100,
+              height: 50,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: greenColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                onPressed: () {},
+                child: Text(
+                  'get started'.toUpperCase(),
+                ),
               ),
             )
           ],

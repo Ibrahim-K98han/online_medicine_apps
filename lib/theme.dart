@@ -10,7 +10,11 @@ Color greyLightColor = Color(0xffADADAD);
 Color grey35Color = Color(0x59989898);
 
 //theme textStyle
-TextStyle lightTextStyle = GoogleFonts.firaSans().copyWith(fontWeight: FontWeight.w300);
-TextStyle regularTextStyle = GoogleFonts.firaSans().copyWith(fontWeight: FontWeight.w400);
-TextStyle mediumTextStyle = GoogleFonts.firaSans().copyWith(fontWeight: FontWeight.w500);
-TextStyle boldTextStyle = GoogleFonts.firaSans().copyWith(fontWeight: FontWeight.w700);
+TextStyle lightTextStyle =
+    GoogleFonts.firaSans().copyWith(fontWeight: FontWeight.w300);
+TextStyle regularTextStyle =
+    GoogleFonts.firaSans().copyWith(fontWeight: FontWeight.w400);
+TextStyle mediumTextStyle =
+    GoogleFonts.firaSans().copyWith(fontWeight: FontWeight.w500);
+TextStyle boldTextStyle =
+    GoogleFonts.firaSans().copyWith(fontWeight: FontWeight.w700);

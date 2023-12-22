@@ -59,7 +59,6 @@ class WidgetIlustration extends StatelessWidget {
             const SizedBox(
               height: 80,
             ),
-            child ?? SizedBox(),
           ],
         )
       ],
