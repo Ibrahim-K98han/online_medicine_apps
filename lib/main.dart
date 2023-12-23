@@ -19,8 +19,9 @@ class MyApp extends StatelessWidget {
       // ),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: greenColor,
-      ),
+          colorScheme: ColorScheme.fromSeed(
+        seedColor: greenColor,
+      )),
       home: SplashScreen(),
     );
   }

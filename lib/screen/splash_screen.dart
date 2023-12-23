@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_medicine_apps/screen/register_screen.dart';
 import 'package:online_medicine_apps/widget/button_primary.dart';
 import 'package:online_medicine_apps/widget/general_logo_space.dart';
 
@@ -37,7 +38,14 @@ class SplashScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RegisterScreen(),
+                    ),
+                  );
+                },
                 child: Text(
                   'get started'.toUpperCase(),
                 ),
